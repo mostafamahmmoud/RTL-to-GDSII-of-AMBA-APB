@@ -1,0 +1,70 @@
+
+module System_Top #(parameter WIDTH = 8, ADDR = 4 , ALU_FUN_WD = 4) (
+
+input    wire                     CLKDIV_EN,
+input    wire                     CLKG_EN,
+input    wire                     CLK,
+input    wire                     RST,
+input    wire   [ALU_FUN_WD-1:0]  ALU_FUN, 
+input    wire                     ALU_Enable,
+input    wire                     WrEn,
+input    wire                     RdEn,
+input    wire   [ADDR-1:0]        Address,
+input    wire   [WIDTH-1:0]       WrData,
+output   wire   [WIDTH-1:0]       RdData,
+output  wire                      ALU_VLD ,
+output  wire    [WIDTH-1:0]       ALU_OUT 
+);
+
+wire    [WIDTH-1:0]      ALU_A,
+                         ALU_B,
+			 CLKDIV_Config;
+wire                     ALU_CLK ;							 												 
+wire 	                 REG_CLK ;
+						 
+
+
+					 
+
+RegFile U0_RegFile (
+.CLK(REG_CLK),
+.RST(RST),
+.WrEn(WrEn),
+.RdEn(RdEn),
+.Address(Address),
+.WrData(WrData),
+.RdData(RdData),
+.REG0(ALU_A),
+.REG1(ALU_B),
+.REG2(CLKDIV_Config)
+);
+
+
+ALU U0_ALU (
+.CLK(ALU_CLK),
+.RST(RST),
+.A(ALU_A), 
+.B(ALU_B),
+.Enable(ALU_Enable),
+.ALU_FUN(ALU_FUN),
+.ALU_OUT(ALU_OUT),
+.OUT_VALID(ALU_VLD)
+);	
+
+ClkDiv U0_ClkDiv (
+.i_ref_clk(CLK),             
+.i_rst(RST),               
+.i_clk_en(CLKDIV_EN),               
+.i_div_ratio(CLKDIV_Config),            
+.i_div_ratio_c(REG_CLK)             
+);
+
+
+CLK_GATE U0_CLK_GATE (
+.CLK_EN(CLKG_EN),
+.CLK(CLK),
+.GATED_CLK(ALU_CLK)
+);
+
+
+endmodule

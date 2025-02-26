@@ -1,0 +1,8 @@
+****************************************************
+
+Info:  Net Ref:/WORK/APB_top/SO is undriven.
+Info:  Net Imp:/WORK/APB_top/SO is undriven.
+Info:  guide_uniquify 3 (Line: 62)  Cannot find object "U1_mux2X1/U1" in design 'APB_top'.
+Info:  guide_uniquify 3 (Line: 62)  Cannot find object "U0_mux2X1/U1" in design 'APB_top'.
+****************************************************
+

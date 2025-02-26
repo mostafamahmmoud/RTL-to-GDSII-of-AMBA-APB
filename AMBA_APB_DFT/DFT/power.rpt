@@ -1,0 +1,46 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : APB_top
+Version: K-2015.06
+Date   : Wed Feb 26 23:00:40 2025
+****************************************
+
+
+Library(s) Used:
+
+    scmetro_tsmc_cl013g_rvt_ss_1p08v_125c (File: /home/IC/AMBA-APB/AMBA_APB_DFT/std_cells/scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.db)
+
+
+Operating Conditions: scmetro_tsmc_cl013g_rvt_ss_1p08v_125c   Library: scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+APB_top                tsmc13_wl40       scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+
+Global Operating Voltage = 1.08 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+APB_top                                1.14e-02 3.21e-03 3.39e+05 1.49e-02 100.0
+  U1_APB_SALVE (APB_SALVE)             1.93e-03 2.35e-04 7.30e+04 2.24e-03  15.0
+  U0_APB_MASTER (APB_MASTER_test_1)    6.45e-03 2.37e-03 2.41e+05 9.05e-03  60.6
+  U1_mux2X1 (mux2X1_1)                 3.85e-04 7.31e-05 1.26e+04 4.71e-04   3.1
+  U0_mux2X1 (mux2X1_0)                 2.64e-03 5.37e-04 1.26e+04 3.19e-03  21.3
+1

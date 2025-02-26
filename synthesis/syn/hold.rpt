@@ -1,0 +1,753 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 100
+Design : APB_top
+Version: K-2015.06
+Date   : Wed Feb 26 01:09:46 2025
+****************************************
+
+Operating Conditions: scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c   Library: scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c
+Wire Load Model Mode: top
+
+  Startpoint: READ_WRITE (input port clocked by PCLK)
+  Endpoint: apb_read_data_out[7]
+            (output port clocked by PCLK)
+  Path Group: INOUT
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  APB_top            tsmc13_wl40           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 f
+  READ_WRITE (in)                                         0.14       4.14 f
+  U1/Y (BUFX4M)                                           0.39       4.53 f
+  U0_APB_MASTER/READ_WRITE (APB_MASTER)                   0.00       4.53 f
+  U0_APB_MASTER/U3/Y (OR2X2M)                             0.53       5.06 f
+  U0_APB_MASTER/U18/Y (INVX6M)                            0.78       5.84 r
+  U0_APB_MASTER/U14/Y (AND2X8M)                           0.96       6.80 r
+  U0_APB_MASTER/apb_read_data_out[7] (APB_MASTER)         0.00       6.80 r
+  apb_read_data_out[7] (out)                              0.00       6.80 r
+  data arrival time                                                  6.80
+
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  output external delay                                  -4.00      -3.90
+  data required time                                                -3.90
+  --------------------------------------------------------------------------
+  data required time                                                -3.90
+  data arrival time                                                 -6.80
+  --------------------------------------------------------------------------
+  slack (MET)                                                       10.70
+
+
+  Startpoint: READ_WRITE (input port clocked by PCLK)
+  Endpoint: apb_read_data_out[6]
+            (output port clocked by PCLK)
+  Path Group: INOUT
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  APB_top            tsmc13_wl40           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 f
+  READ_WRITE (in)                                         0.14       4.14 f
+  U1/Y (BUFX4M)                                           0.39       4.53 f
+  U0_APB_MASTER/READ_WRITE (APB_MASTER)                   0.00       4.53 f
+  U0_APB_MASTER/U3/Y (OR2X2M)                             0.53       5.06 f
+  U0_APB_MASTER/U17/Y (INVX6M)                            0.78       5.84 r
+  U0_APB_MASTER/U13/Y (AND2X8M)                           0.96       6.80 r
+  U0_APB_MASTER/apb_read_data_out[6] (APB_MASTER)         0.00       6.80 r
+  apb_read_data_out[6] (out)                              0.00       6.80 r
+  data arrival time                                                  6.80
+
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  output external delay                                  -4.00      -3.90
+  data required time                                                -3.90
+  --------------------------------------------------------------------------
+  data required time                                                -3.90
+  data arrival time                                                 -6.80
+  --------------------------------------------------------------------------
+  slack (MET)                                                       10.70
+
+
+  Startpoint: READ_WRITE (input port clocked by PCLK)
+  Endpoint: apb_read_data_out[5]
+            (output port clocked by PCLK)
+  Path Group: INOUT
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  APB_top            tsmc13_wl40           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 f
+  READ_WRITE (in)                                         0.14       4.14 f
+  U1/Y (BUFX4M)                                           0.39       4.53 f
+  U0_APB_MASTER/READ_WRITE (APB_MASTER)                   0.00       4.53 f
+  U0_APB_MASTER/U3/Y (OR2X2M)                             0.53       5.06 f
+  U0_APB_MASTER/U18/Y (INVX6M)                            0.78       5.84 r
+  U0_APB_MASTER/U12/Y (AND2X8M)                           0.96       6.80 r
+  U0_APB_MASTER/apb_read_data_out[5] (APB_MASTER)         0.00       6.80 r
+  apb_read_data_out[5] (out)                              0.00       6.80 r
+  data arrival time                                                  6.80
+
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  output external delay                                  -4.00      -3.90
+  data required time                                                -3.90
+  --------------------------------------------------------------------------
+  data required time                                                -3.90
+  data arrival time                                                 -6.80
+  --------------------------------------------------------------------------
+  slack (MET)                                                       10.70
+
+
+  Startpoint: READ_WRITE (input port clocked by PCLK)
+  Endpoint: apb_read_data_out[4]
+            (output port clocked by PCLK)
+  Path Group: INOUT
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  APB_top            tsmc13_wl40           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 f
+  READ_WRITE (in)                                         0.14       4.14 f
+  U1/Y (BUFX4M)                                           0.39       4.53 f
+  U0_APB_MASTER/READ_WRITE (APB_MASTER)                   0.00       4.53 f
+  U0_APB_MASTER/U3/Y (OR2X2M)                             0.53       5.06 f
+  U0_APB_MASTER/U17/Y (INVX6M)                            0.78       5.84 r
+  U0_APB_MASTER/U11/Y (AND2X8M)                           0.96       6.80 r
+  U0_APB_MASTER/apb_read_data_out[4] (APB_MASTER)         0.00       6.80 r
+  apb_read_data_out[4] (out)                              0.00       6.80 r
+  data arrival time                                                  6.80
+
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  output external delay                                  -4.00      -3.90
+  data required time                                                -3.90
+  --------------------------------------------------------------------------
+  data required time                                                -3.90
+  data arrival time                                                 -6.80
+  --------------------------------------------------------------------------
+  slack (MET)                                                       10.70
+
+
+  Startpoint: READ_WRITE (input port clocked by PCLK)
+  Endpoint: apb_read_data_out[3]
+            (output port clocked by PCLK)
+  Path Group: INOUT
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  APB_top            tsmc13_wl40           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 f
+  READ_WRITE (in)                                         0.14       4.14 f
+  U1/Y (BUFX4M)                                           0.39       4.53 f
+  U0_APB_MASTER/READ_WRITE (APB_MASTER)                   0.00       4.53 f
+  U0_APB_MASTER/U3/Y (OR2X2M)                             0.53       5.06 f
+  U0_APB_MASTER/U18/Y (INVX6M)                            0.78       5.84 r
+  U0_APB_MASTER/U10/Y (AND2X8M)                           0.96       6.80 r
+  U0_APB_MASTER/apb_read_data_out[3] (APB_MASTER)         0.00       6.80 r
+  apb_read_data_out[3] (out)                              0.00       6.80 r
+  data arrival time                                                  6.80
+
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  output external delay                                  -4.00      -3.90
+  data required time                                                -3.90
+  --------------------------------------------------------------------------
+  data required time                                                -3.90
+  data arrival time                                                 -6.80
+  --------------------------------------------------------------------------
+  slack (MET)                                                       10.70
+
+
+  Startpoint: READ_WRITE (input port clocked by PCLK)
+  Endpoint: apb_read_data_out[2]
+            (output port clocked by PCLK)
+  Path Group: INOUT
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  APB_top            tsmc13_wl40           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 f
+  READ_WRITE (in)                                         0.14       4.14 f
+  U1/Y (BUFX4M)                                           0.39       4.53 f
+  U0_APB_MASTER/READ_WRITE (APB_MASTER)                   0.00       4.53 f
+  U0_APB_MASTER/U3/Y (OR2X2M)                             0.53       5.06 f
+  U0_APB_MASTER/U17/Y (INVX6M)                            0.78       5.84 r
+  U0_APB_MASTER/U9/Y (AND2X8M)                            0.96       6.80 r
+  U0_APB_MASTER/apb_read_data_out[2] (APB_MASTER)         0.00       6.80 r
+  apb_read_data_out[2] (out)                              0.00       6.80 r
+  data arrival time                                                  6.80
+
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  output external delay                                  -4.00      -3.90
+  data required time                                                -3.90
+  --------------------------------------------------------------------------
+  data required time                                                -3.90
+  data arrival time                                                 -6.80
+  --------------------------------------------------------------------------
+  slack (MET)                                                       10.70
+
+
+  Startpoint: READ_WRITE (input port clocked by PCLK)
+  Endpoint: apb_read_data_out[1]
+            (output port clocked by PCLK)
+  Path Group: INOUT
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  APB_top            tsmc13_wl40           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 f
+  READ_WRITE (in)                                         0.14       4.14 f
+  U1/Y (BUFX4M)                                           0.39       4.53 f
+  U0_APB_MASTER/READ_WRITE (APB_MASTER)                   0.00       4.53 f
+  U0_APB_MASTER/U3/Y (OR2X2M)                             0.53       5.06 f
+  U0_APB_MASTER/U18/Y (INVX6M)                            0.78       5.84 r
+  U0_APB_MASTER/U8/Y (AND2X8M)                            0.96       6.80 r
+  U0_APB_MASTER/apb_read_data_out[1] (APB_MASTER)         0.00       6.80 r
+  apb_read_data_out[1] (out)                              0.00       6.80 r
+  data arrival time                                                  6.80
+
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  output external delay                                  -4.00      -3.90
+  data required time                                                -3.90
+  --------------------------------------------------------------------------
+  data required time                                                -3.90
+  data arrival time                                                 -6.80
+  --------------------------------------------------------------------------
+  slack (MET)                                                       10.70
+
+
+  Startpoint: READ_WRITE (input port clocked by PCLK)
+  Endpoint: apb_read_data_out[0]
+            (output port clocked by PCLK)
+  Path Group: INOUT
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  APB_top            tsmc13_wl40           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 f
+  READ_WRITE (in)                                         0.14       4.14 f
+  U1/Y (BUFX4M)                                           0.39       4.53 f
+  U0_APB_MASTER/READ_WRITE (APB_MASTER)                   0.00       4.53 f
+  U0_APB_MASTER/U3/Y (OR2X2M)                             0.53       5.06 f
+  U0_APB_MASTER/U17/Y (INVX6M)                            0.78       5.84 r
+  U0_APB_MASTER/U7/Y (AND2X8M)                            0.96       6.80 r
+  U0_APB_MASTER/apb_read_data_out[0] (APB_MASTER)         0.00       6.80 r
+  apb_read_data_out[0] (out)                              0.00       6.80 r
+  data arrival time                                                  6.80
+
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  output external delay                                  -4.00      -3.90
+  data required time                                                -3.90
+  --------------------------------------------------------------------------
+  data required time                                                -3.90
+  data arrival time                                                 -6.80
+  --------------------------------------------------------------------------
+  slack (MET)                                                       10.70
+
+
+  Startpoint: transfer (input port clocked by PCLK)
+  Endpoint: U0_APB_MASTER/current_state_reg[0]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: INREG
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  APB_top            tsmc13_wl40           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 f
+  transfer (in)                                           0.14       4.14 f
+  U0_APB_MASTER/transfer (APB_MASTER)                     0.00       4.14 f
+  U0_APB_MASTER/U40/Y (OAI21X2M)                          0.32       4.46 r
+  U0_APB_MASTER/U39/Y (NAND2BX2M)                         0.31       4.77 f
+  U0_APB_MASTER/current_state_reg[0]/D (DFFRQX2M)         0.00       4.77 f
+  data arrival time                                                  4.77
+
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  U0_APB_MASTER/current_state_reg[0]/CK (DFFRQX2M)        0.00       0.10 r
+  library hold time                                      -0.08       0.02
+  data required time                                                 0.02
+  --------------------------------------------------------------------------
+  data required time                                                 0.02
+  data arrival time                                                 -4.77
+  --------------------------------------------------------------------------
+  slack (MET)                                                        4.74
+
+
+  Startpoint: READ_WRITE (input port clocked by PCLK)
+  Endpoint: U0_APB_MASTER/current_state_reg[1]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: INREG
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  APB_top            tsmc13_wl40           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 r
+  READ_WRITE (in)                                         0.23       4.23 r
+  U1/Y (BUFX4M)                                           0.61       4.83 r
+  U0_APB_MASTER/READ_WRITE (APB_MASTER)                   0.00       4.83 r
+  U0_APB_MASTER/PWRITE (APB_MASTER)                       0.00       4.83 r
+  U1_APB_SALVE/PWRITE (APB_SALVE)                         0.00       4.83 r
+  U1_APB_SALVE/U865/Y (NAND3X2M)                          0.78       5.61 f
+  U1_APB_SALVE/U866/Y (NAND2XLM)                          0.94       6.55 r
+  U1_APB_SALVE/PREADY (APB_SALVE)                         0.00       6.55 r
+  U0_APB_MASTER/PREADY (APB_MASTER)                       0.00       6.55 r
+  U0_APB_MASTER/U5/Y (OAI21X3M)                           0.48       7.03 f
+  U0_APB_MASTER/current_state_reg[1]/D (DFFRX1M)          0.00       7.03 f
+  data arrival time                                                  7.03
+
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  U0_APB_MASTER/current_state_reg[1]/CK (DFFRX1M)         0.00       0.10 r
+  library hold time                                      -0.08       0.02
+  data required time                                                 0.02
+  --------------------------------------------------------------------------
+  data required time                                                 0.02
+  data arrival time                                                 -7.03
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.01
+
+
+  Startpoint: U0_APB_MASTER/current_state_reg[0]
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: U0_APB_MASTER/current_state_reg[1]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  APB_top            tsmc13_wl40           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U0_APB_MASTER/current_state_reg[0]/CK (DFFRQX2M)        0.00       0.00 r
+  U0_APB_MASTER/current_state_reg[0]/Q (DFFRQX2M)         0.73       0.73 f
+  U0_APB_MASTER/U30/Y (NAND2X4M)                          0.62       1.36 r
+  U0_APB_MASTER/U5/Y (OAI21X3M)                           0.42       1.78 f
+  U0_APB_MASTER/current_state_reg[1]/D (DFFRX1M)          0.00       1.78 f
+  data arrival time                                                  1.78
+
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  U0_APB_MASTER/current_state_reg[1]/CK (DFFRX1M)         0.00       0.10 r
+  library hold time                                      -0.08       0.02
+  data required time                                                 0.02
+  --------------------------------------------------------------------------
+  data required time                                                 0.02
+  data arrival time                                                 -1.78
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.76
+
+
+  Startpoint: U0_APB_MASTER/current_state_reg[1]
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: U0_APB_MASTER/current_state_reg[0]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  APB_top            tsmc13_wl40           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U0_APB_MASTER/current_state_reg[1]/CK (DFFRX1M)         0.00       0.00 r
+  U0_APB_MASTER/current_state_reg[1]/QN (DFFRX1M)         0.82       0.82 f
+  U0_APB_MASTER/U40/Y (OAI21X2M)                          0.74       1.56 r
+  U0_APB_MASTER/U39/Y (NAND2BX2M)                         0.31       1.87 f
+  U0_APB_MASTER/current_state_reg[0]/D (DFFRQX2M)         0.00       1.87 f
+  data arrival time                                                  1.87
+
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  U0_APB_MASTER/current_state_reg[0]/CK (DFFRQX2M)        0.00       0.10 r
+  library hold time                                      -0.08       0.02
+  data required time                                                 0.02
+  --------------------------------------------------------------------------
+  data required time                                                 0.02
+  data arrival time                                                 -1.87
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.85
+
+
+  Startpoint: U0_APB_MASTER/current_state_reg[0]
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: apb_read_data_out[7]
+            (output port clocked by PCLK)
+  Path Group: REGOUT
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  APB_top            tsmc13_wl40           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U0_APB_MASTER/current_state_reg[0]/CK (DFFRQX2M)        0.00       0.00 r
+  U0_APB_MASTER/current_state_reg[0]/Q (DFFRQX2M)         0.73       0.73 f
+  U0_APB_MASTER/U30/Y (NAND2X4M)                          0.62       1.36 r
+  U0_APB_MASTER/U3/Y (OR2X2M)                             0.71       2.07 r
+  U0_APB_MASTER/U18/Y (INVX6M)                            0.58       2.65 f
+  U0_APB_MASTER/U14/Y (AND2X8M)                           0.66       3.31 f
+  U0_APB_MASTER/apb_read_data_out[7] (APB_MASTER)         0.00       3.31 f
+  apb_read_data_out[7] (out)                              0.00       3.31 f
+  data arrival time                                                  3.31
+
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  output external delay                                  -4.00      -3.90
+  data required time                                                -3.90
+  --------------------------------------------------------------------------
+  data required time                                                -3.90
+  data arrival time                                                 -3.31
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.21
+
+
+  Startpoint: U0_APB_MASTER/current_state_reg[0]
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: apb_read_data_out[6]
+            (output port clocked by PCLK)
+  Path Group: REGOUT
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  APB_top            tsmc13_wl40           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U0_APB_MASTER/current_state_reg[0]/CK (DFFRQX2M)        0.00       0.00 r
+  U0_APB_MASTER/current_state_reg[0]/Q (DFFRQX2M)         0.73       0.73 f
+  U0_APB_MASTER/U30/Y (NAND2X4M)                          0.62       1.36 r
+  U0_APB_MASTER/U3/Y (OR2X2M)                             0.71       2.07 r
+  U0_APB_MASTER/U17/Y (INVX6M)                            0.58       2.65 f
+  U0_APB_MASTER/U13/Y (AND2X8M)                           0.66       3.31 f
+  U0_APB_MASTER/apb_read_data_out[6] (APB_MASTER)         0.00       3.31 f
+  apb_read_data_out[6] (out)                              0.00       3.31 f
+  data arrival time                                                  3.31
+
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  output external delay                                  -4.00      -3.90
+  data required time                                                -3.90
+  --------------------------------------------------------------------------
+  data required time                                                -3.90
+  data arrival time                                                 -3.31
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.21
+
+
+  Startpoint: U0_APB_MASTER/current_state_reg[0]
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: apb_read_data_out[5]
+            (output port clocked by PCLK)
+  Path Group: REGOUT
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  APB_top            tsmc13_wl40           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U0_APB_MASTER/current_state_reg[0]/CK (DFFRQX2M)        0.00       0.00 r
+  U0_APB_MASTER/current_state_reg[0]/Q (DFFRQX2M)         0.73       0.73 f
+  U0_APB_MASTER/U30/Y (NAND2X4M)                          0.62       1.36 r
+  U0_APB_MASTER/U3/Y (OR2X2M)                             0.71       2.07 r
+  U0_APB_MASTER/U18/Y (INVX6M)                            0.58       2.65 f
+  U0_APB_MASTER/U12/Y (AND2X8M)                           0.66       3.31 f
+  U0_APB_MASTER/apb_read_data_out[5] (APB_MASTER)         0.00       3.31 f
+  apb_read_data_out[5] (out)                              0.00       3.31 f
+  data arrival time                                                  3.31
+
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  output external delay                                  -4.00      -3.90
+  data required time                                                -3.90
+  --------------------------------------------------------------------------
+  data required time                                                -3.90
+  data arrival time                                                 -3.31
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.21
+
+
+  Startpoint: U0_APB_MASTER/current_state_reg[0]
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: apb_read_data_out[4]
+            (output port clocked by PCLK)
+  Path Group: REGOUT
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  APB_top            tsmc13_wl40           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U0_APB_MASTER/current_state_reg[0]/CK (DFFRQX2M)        0.00       0.00 r
+  U0_APB_MASTER/current_state_reg[0]/Q (DFFRQX2M)         0.73       0.73 f
+  U0_APB_MASTER/U30/Y (NAND2X4M)                          0.62       1.36 r
+  U0_APB_MASTER/U3/Y (OR2X2M)                             0.71       2.07 r
+  U0_APB_MASTER/U17/Y (INVX6M)                            0.58       2.65 f
+  U0_APB_MASTER/U11/Y (AND2X8M)                           0.66       3.31 f
+  U0_APB_MASTER/apb_read_data_out[4] (APB_MASTER)         0.00       3.31 f
+  apb_read_data_out[4] (out)                              0.00       3.31 f
+  data arrival time                                                  3.31
+
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  output external delay                                  -4.00      -3.90
+  data required time                                                -3.90
+  --------------------------------------------------------------------------
+  data required time                                                -3.90
+  data arrival time                                                 -3.31
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.21
+
+
+  Startpoint: U0_APB_MASTER/current_state_reg[0]
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: apb_read_data_out[3]
+            (output port clocked by PCLK)
+  Path Group: REGOUT
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  APB_top            tsmc13_wl40           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U0_APB_MASTER/current_state_reg[0]/CK (DFFRQX2M)        0.00       0.00 r
+  U0_APB_MASTER/current_state_reg[0]/Q (DFFRQX2M)         0.73       0.73 f
+  U0_APB_MASTER/U30/Y (NAND2X4M)                          0.62       1.36 r
+  U0_APB_MASTER/U3/Y (OR2X2M)                             0.71       2.07 r
+  U0_APB_MASTER/U18/Y (INVX6M)                            0.58       2.65 f
+  U0_APB_MASTER/U10/Y (AND2X8M)                           0.66       3.31 f
+  U0_APB_MASTER/apb_read_data_out[3] (APB_MASTER)         0.00       3.31 f
+  apb_read_data_out[3] (out)                              0.00       3.31 f
+  data arrival time                                                  3.31
+
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  output external delay                                  -4.00      -3.90
+  data required time                                                -3.90
+  --------------------------------------------------------------------------
+  data required time                                                -3.90
+  data arrival time                                                 -3.31
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.21
+
+
+  Startpoint: U0_APB_MASTER/current_state_reg[0]
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: apb_read_data_out[2]
+            (output port clocked by PCLK)
+  Path Group: REGOUT
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  APB_top            tsmc13_wl40           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U0_APB_MASTER/current_state_reg[0]/CK (DFFRQX2M)        0.00       0.00 r
+  U0_APB_MASTER/current_state_reg[0]/Q (DFFRQX2M)         0.73       0.73 f
+  U0_APB_MASTER/U30/Y (NAND2X4M)                          0.62       1.36 r
+  U0_APB_MASTER/U3/Y (OR2X2M)                             0.71       2.07 r
+  U0_APB_MASTER/U17/Y (INVX6M)                            0.58       2.65 f
+  U0_APB_MASTER/U9/Y (AND2X8M)                            0.66       3.31 f
+  U0_APB_MASTER/apb_read_data_out[2] (APB_MASTER)         0.00       3.31 f
+  apb_read_data_out[2] (out)                              0.00       3.31 f
+  data arrival time                                                  3.31
+
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  output external delay                                  -4.00      -3.90
+  data required time                                                -3.90
+  --------------------------------------------------------------------------
+  data required time                                                -3.90
+  data arrival time                                                 -3.31
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.21
+
+
+  Startpoint: U0_APB_MASTER/current_state_reg[0]
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: apb_read_data_out[1]
+            (output port clocked by PCLK)
+  Path Group: REGOUT
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  APB_top            tsmc13_wl40           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U0_APB_MASTER/current_state_reg[0]/CK (DFFRQX2M)        0.00       0.00 r
+  U0_APB_MASTER/current_state_reg[0]/Q (DFFRQX2M)         0.73       0.73 f
+  U0_APB_MASTER/U30/Y (NAND2X4M)                          0.62       1.36 r
+  U0_APB_MASTER/U3/Y (OR2X2M)                             0.71       2.07 r
+  U0_APB_MASTER/U18/Y (INVX6M)                            0.58       2.65 f
+  U0_APB_MASTER/U8/Y (AND2X8M)                            0.66       3.31 f
+  U0_APB_MASTER/apb_read_data_out[1] (APB_MASTER)         0.00       3.31 f
+  apb_read_data_out[1] (out)                              0.00       3.31 f
+  data arrival time                                                  3.31
+
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  output external delay                                  -4.00      -3.90
+  data required time                                                -3.90
+  --------------------------------------------------------------------------
+  data required time                                                -3.90
+  data arrival time                                                 -3.31
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.21
+
+
+  Startpoint: U0_APB_MASTER/current_state_reg[0]
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: apb_read_data_out[0]
+            (output port clocked by PCLK)
+  Path Group: REGOUT
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  APB_top            tsmc13_wl40           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U0_APB_MASTER/current_state_reg[0]/CK (DFFRQX2M)        0.00       0.00 r
+  U0_APB_MASTER/current_state_reg[0]/Q (DFFRQX2M)         0.73       0.73 f
+  U0_APB_MASTER/U30/Y (NAND2X4M)                          0.62       1.36 r
+  U0_APB_MASTER/U3/Y (OR2X2M)                             0.71       2.07 r
+  U0_APB_MASTER/U17/Y (INVX6M)                            0.58       2.65 f
+  U0_APB_MASTER/U7/Y (AND2X8M)                            0.66       3.31 f
+  U0_APB_MASTER/apb_read_data_out[0] (APB_MASTER)         0.00       3.31 f
+  apb_read_data_out[0] (out)                              0.00       3.31 f
+  data arrival time                                                  3.31
+
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  output external delay                                  -4.00      -3.90
+  data required time                                                -3.90
+  --------------------------------------------------------------------------
+  data required time                                                -3.90
+  data arrival time                                                 -3.31
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.21
+
+
+1

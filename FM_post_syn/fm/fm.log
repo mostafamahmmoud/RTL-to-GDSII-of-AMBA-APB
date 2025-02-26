@@ -1,0 +1,254 @@
+
+                                 Formality (R)
+
+               Version L-2016.03-SP1 for linux64 - Apr 13, 2016 
+
+                    Copyright (c) 1988 - 2016 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+
+  ** Highlights of Formality (R) Version L-2016.03 **
+   - New alternate verification strategies for resolving inconclusive verifications
+   - Automation for deploying alternate strategies
+   - New command to export the mapping of reference to implementation registers
+   - New capability to combine PG and low power information from db libraries with Verilog functional models
+
+   * Please refer to the Formality Release Notes for details and additional enhancements
+
+Build: 4031317
+Hostname: IC (RHEL64)
+Current time: Wed Feb 26 03:23:37 2025
+
+Loading db file '/opt/Synopsys/Formality2016/libraries/syn/gtech.db'
+###################################################################
+########################### Variables #############################
+###################################################################
+set SSLIB "/home/IC/AMBA-APB/FM_post_syn/std_cells/scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.db"
+/home/IC/AMBA-APB/FM_post_syn/std_cells/scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.db
+set TTLIB "/home/IC/AMBA-APB/FM_post_syn/std_cells/scmetro_tsmc_cl013g_rvt_tt_1p2v_25c.db"
+/home/IC/AMBA-APB/FM_post_syn/std_cells/scmetro_tsmc_cl013g_rvt_tt_1p2v_25c.db
+set FFLIB "/home/IC/AMBA-APB/FM_post_syn/std_cells/scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c.db"
+/home/IC/AMBA-APB/FM_post_syn/std_cells/scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c.db
+###################################################################
+############################ Guidance #############################
+###################################################################
+# Synopsys setup variable
+set synopsys_auto_setup true
+true
+# Formality Setup File
+set_svf "/home/IC/AMBA-APB/synthesis/syn/APB_TOP.svf"
+SVF set to '/home/IC/AMBA-APB/synthesis/syn/APB_TOP.svf'.
+1
+###################################################################
+###################### Reference Container ########################
+###################################################################
+# Read Reference Design Verilog Files
+read_verilog -container Ref "/home/IC/AMBA-APB/rtl/APB_MASTER.v"
+No target library specified, default is WORK
+Initializing DesignWare ...
+Initialization Complete
+Loading verilog file '/home/IC/AMBA-APB/rtl/APB_MASTER.v'
+Created container 'Ref'
+Current container set to 'Ref'
+1
+read_verilog -container Ref "/home/IC/AMBA-APB/rtl/APB_SLAVE.v"
+No target library specified, default is WORK
+Loading verilog file '/home/IC/AMBA-APB/rtl/APB_SLAVE.v'
+1
+read_verilog -container Ref "/home/IC/AMBA-APB/rtl/APB_Top.v"
+No target library specified, default is WORK
+Loading verilog file '/home/IC/AMBA-APB/rtl/APB_Top.v'
+1
+# Read Reference technology libraries
+read_db -container Ref $SSLIB
+Loading db file '/home/IC/AMBA-APB/FM_post_syn/std_cells/scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.db'
+1
+read_db -container Ref $TTLIB
+Loading db file '/home/IC/AMBA-APB/FM_post_syn/std_cells/scmetro_tsmc_cl013g_rvt_tt_1p2v_25c.db'
+1
+read_db -container Ref $FFLIB
+Loading db file '/home/IC/AMBA-APB/FM_post_syn/std_cells/scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c.db'
+1
+# set the top Reference Design 
+set_reference_design APB_top
+Reference design set to 'Ref:/WORK/APB_top'
+1
+set_top APB_top
+Setting top design to 'Ref:/WORK/APB_top'
+Status:   Elaborating design APB_top   ...  
+Status:   Elaborating design APB_MASTER   ...  
+Status:   Elaborating design APB_SALVE   ...  
+Warning: Index may take values outside array bound, may cause simulation mismatch .. (Signal: mem Block: /APB_SALVE File: /home/IC/AMBA-APB/rtl/APB_SLAVE.v Line: 21)  (FMR_ELAB-147)
+Status:  Implementing inferred operators...
+
+************ Library Checking Summary ************
+Warning:  3 unlinked power cell(s) with unread pg pins.
+        Use 'report_libraries -defects all' for more details.
+**************************************************
+
+Top design set to 'Ref:/WORK/APB_top' with warnings
+   ATTENTION: RTL interpretation messages were produced during link.
+              Verification results may disagree with a logic simulator.
+
+************ RTL Interpretation Summary ************
+************ Design: Ref:/WORK/APB_top
+1 FMR_ELAB-147 message produced    
+
+Please refer to the Formality log file for more details,
+or execute report_hdlin_mismatches.
+****************************************************
+
+Reference design set to 'Ref:/WORK/APB_top'
+1
+###################################################################
+#################### Implementation Container #####################
+###################################################################
+# Read Implementation Design Files
+read_verilog -netlist -container Imp "/home/IC/AMBA-APB/synthesis/syn/APB_Top.v"
+No target library specified, default is WORK
+Loading verilog file '/home/IC/AMBA-APB/synthesis/syn/APB_Top.v'
+Created container 'Imp'
+Current container set to 'Imp'
+1
+# Read Implementation technology libraries
+read_db -container Imp $SSLIB
+Loading db file '/home/IC/AMBA-APB/FM_post_syn/std_cells/scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.db'
+1
+read_db -container Imp $TTLIB
+Loading db file '/home/IC/AMBA-APB/FM_post_syn/std_cells/scmetro_tsmc_cl013g_rvt_tt_1p2v_25c.db'
+1
+read_db -container Imp $FFLIB
+Loading db file '/home/IC/AMBA-APB/FM_post_syn/std_cells/scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c.db'
+1
+# set the top Implementation Design
+set_implementation_design APB_top
+Implementation design set to 'Imp:/WORK/APB_top'
+1
+set_top APB_top
+Setting top design to 'Imp:/WORK/APB_top'
+Status:  Implementing inferred operators...
+
+************ Library Checking Summary ************
+Warning:  3 unlinked power cell(s) with unread pg pins.
+        Use 'report_libraries -defects all' for more details.
+**************************************************
+
+Top design successfully set to 'Imp:/WORK/APB_top'
+Implementation design set to 'Imp:/WORK/APB_top'
+1
+###################### Matching Compare points ####################
+match
+Reference design is 'Ref:/WORK/APB_top'
+Implementation design is 'Imp:/WORK/APB_top'
+Status:  Checking designs...
+Status:  Building verification models...
+Status:  Processing Guide Commands...
+
+***************************** Guidance Summary *****************************
+                                         Status
+Command                 Accepted   Rejected  Unsupported  Unprocessed  Total
+----------------------------------------------------------------------------
+environment         :          1          0          0          0          1
+
+SVF files read:
+      /home/IC/AMBA-APB/synthesis/syn/APB_TOP.svf
+
+SVF files produced:
+  /home/IC/AMBA-APB/FM_post_syn/fm/formality_svf/
+    svf.txt
+****************************************************************************
+
+Status:  Matching...
+    
+*********************************** Matching Results ***********************************    
+ 10 Compare points matched by name    
+ 0 Compare points matched by signature analysis    
+ 0 Compare points matched by topology    
+ 28 Matched primary inputs, black-box outputs    
+ 0(0) Unmatched reference(implementation) compare points    
+ 0(0) Unmatched reference(implementation) primary inputs, black-box outputs    
+****************************************************************************************
+
+1
+######################### Run Verification ########################
+set successful [verify]
+Reference design is 'Ref:/WORK/APB_top'
+Implementation design is 'Imp:/WORK/APB_top'
+    
+*********************************** Matching Results ***********************************    
+ 10 Compare points matched by name    
+ 0 Compare points matched by signature analysis    
+ 0 Compare points matched by topology    
+ 28 Matched primary inputs, black-box outputs    
+ 0(0) Unmatched reference(implementation) compare points    
+ 0(0) Unmatched reference(implementation) primary inputs, black-box outputs    
+****************************************************************************************
+
+Status:  Verifying...
+
+************ RTL Interpretation Summary ************
+************ Design: Ref:/WORK/APB_top
+1 FMR_ELAB-147 message produced    
+
+Please refer to the Formality log file for more details,
+or execute report_hdlin_mismatches.
+****************************************************
+
+
+***************************** Synopsys Auto Setup Summary ******************************
+
+!!! Synopsys Auto Setup Mode was enabled. !!!
+!!! Verification results are valid assuming the following setup constraints: !!!
+
+### RTL Interpretation Setup
+   set hdlin_ignore_parallel_case false
+   set hdlin_ignore_full_case false
+   set hdlin_error_on_mismatch_message false
+   set hdlin_ignore_embedded_configuration true
+
+### Undriven Signal Handling Setup
+   set verification_set_undriven_signals synthesis
+
+### Test Logic Setup
+   set verification_verify_directly_undriven_output false
+   For details see report_dont_verify_points and report_constants
+
+
+For further details on Synopsys Auto Setup Mode: Type man synopsys_auto_setup
+****************************************************************************************
+
+
+********************************* Verification Results *********************************
+Verification SUCCEEDED
+   ATTENTION: synopsys_auto_setup mode was enabled.
+              See Synopsys Auto Setup Summary for details.
+   ATTENTION: RTL interpretation messages were produced during link
+              of reference design.
+              Verification results may disagree with a logic simulator.
+-----------------------------------------------------------------------
+ Reference design: Ref:/WORK/APB_top
+ Implementation design: Imp:/WORK/APB_top
+ 10 Passing compare points
+----------------------------------------------------------------------------------------
+Matched Compare Points     BBPin    Loop   BBNet     Cut    Port     DFF     LAT   TOTAL
+----------------------------------------------------------------------------------------
+Passing (equivalent)           0       0       0       0       8       2       0      10
+Failing (not equivalent)       0       0       0       0       0       0       0       0
+****************************************************************************************
+1
+if {!$successful} {
+diagnose
+analyze_points -failing
+}
+########################### Reporting ############################# 
+report_passing_points > "passing_points.rpt"
+report_failing_points > "failing_points.rpt"
+report_aborted_points > "aborted_points.rpt"
+report_unverified_points > "unverified_points.rpt"
+start_gui
+     1  source -echo -verbose fm_script.tcl
+1
+1
+fm_shell (verify)> 
